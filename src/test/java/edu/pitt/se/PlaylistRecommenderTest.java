@@ -9,7 +9,7 @@ import java.util.List;
 public class PlaylistRecommenderTest {
 
     @Test
-    public static void placeholder() {
+    public void placeholder() {
 
         // ---------------- CLASSIFY ENERGY TESTS ----------------------------
         // classifyTest1: null list, should throw an exception
