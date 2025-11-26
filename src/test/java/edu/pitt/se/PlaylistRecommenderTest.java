@@ -73,14 +73,23 @@ public class PlaylistRecommenderTest {
         int output10 = PlaylistRecommender.normalizeVolume(1234); 
         assertEquals(100, output10); 
 
+
+
+
+        // -------------------------------------------------------------------
+
+    }
+    @Test 
+    void normalVolumeTest11(){
         // normalVolumeTest11: volume too low (-20), should return 0
         int output11 = PlaylistRecommender.normalizeVolume(-20); 
         assertEquals(0, output11);
-
+    }
+    
+    @Test
+    void normalVolumeTest12(){
         // normalVolumeTest12: valid volume (14), should return 14
         int output12 = PlaylistRecommender.normalizeVolume(14); 
         assertEquals(14, output12); 
-        // -------------------------------------------------------------------
-
     }
 }
